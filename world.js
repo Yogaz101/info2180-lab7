@@ -12,7 +12,8 @@ window.onload=function(){
                 }
             }
         }
-        request.open('GET',"world.php?country",true);
+        request.open('GET',"world.php?q="+country_search.value);
         request.send();
     });
+    alert(country_search.value);
 }
